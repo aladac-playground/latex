@@ -1,0 +1,3 @@
+task :cv, :hosts => "v" do
+  run "cd tex; make"
+end
