@@ -11,19 +11,22 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
-%\usepackage{fontspec}
-\usepackage{xunicode}
-\usepackage{xltxtra}
+
+\usepackage{xltxtra,fontspec,xunicode}
+
 \usepackage[none]{hyphenat}
 
+\setromanfont{Ubuntu}
+
+
 \usepackage[compact]{titlesec}
-%\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{}
 \titlespacing*{\section}{0pt}{1em}{0.5em}
 \titlespacing*{\subsection}{0pt}{0.5em}{0em}
 
 % Set Sans as the default font
-\renewcommand{\familydefault}{\sfdefault}
+% \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\headrulewidth}{0pt}
 
 % Lets see how a star will look like as item list bullet
