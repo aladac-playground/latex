@@ -18,6 +18,7 @@
 
 \usepackage[compact]{titlesec}
 %\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{}
 \titlespacing*{\section}{0pt}{1em}{0.5em}
 \titlespacing*{\subsection}{0pt}{0.5em}{0em}
 
@@ -28,12 +29,33 @@
 % Lets see how a star will look like as item list bullet
 \renewcommand{\labelitemi}{$\star$}
 
+% Lets make some links
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Adam Ladachowski - CV},    % title
+    pdfauthor={Adam Ladachowski},     % author
+    pdfsubject={CV},   % subject of the document
+    pdfcreator={vim, xelatex},   % creator of the document
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=black           % color of external links
+}
+
 \setlength{\parindent}{0pt} 
 \setlength{\parskip}{0cm}
 \setlength{\columnsep}{2cm}
 
 
-\fancyhead[L]{{\bf email:} adam.ladachowski@gmail.com, {\bf mobile:} +48 535 329 895, {\bf blog:} http://aladac.tumblr.com, {\bf twitter:} @aladac}
+\fancyhead[L]{{\bf email:} \href{mailto:adam.ladachowski@gmail.com}{adam.ladachowski@gmail.com}, {\bf mobile:} +48 535 329 895, {\bf blog:} \href{http://aladac.tumblr.com}{aladac.tumblr.com}, {\bf twitter:} \href{https://twitter.com/aladac}{@aladac}}
 \fancyfoot{}
 \fancyfoot[L]{\tt\small I hereby agree for my personal data, included in my job application, to be processed in line with the needs of 
 recruitment, in accordance with the Personnel Protection Act of 29.08.1997 no 133 position 883}
@@ -85,19 +107,15 @@ Category B, 1997
 
 \section*{Certifications and Courses}
 
-\begin{itemize}
-\setlength{\itemsep}{0cm}%
-\setlength{\parskip}{0cm}%
-\item First Certificate in English (Cambridge, 1995)
-\item Central Backup Management (BigVent, 2002)
-\item CCNA Workshop Sessions (Altkom, 2004)
-\item Advanced Driving (ABJ, 2006)
-\item Artproject – Project Management (ArtED, 2007)
-\item IP Telephony – SIP (CITCOM PW, 2007)
-\item ISDN (CITCOM-PW, 2007)
-\item Mobile Data Gateway (Materna, 2007)
-\item Dedicated F5 Training (Compendium, 2009)
-\end{itemize}
+First Certificate in English (Cambridge, 1995)\\
+Central Backup Management (BigVent, 2002)\\
+CCNA Workshop Sessions (Altkom, 2004)\\
+Advanced Driving (ABJ, 2006)\\
+Artproject – Project Management (ArtED, 2007)\\
+IP Telephony – SIP (CITCOM PW, 2007)\\
+ISDN (CITCOM-PW, 2007)\\
+Mobile Data Gateway (Materna, 2007)\\
+Dedicated F5 Training (Compendium, 2009)
 
 \section*{Experience}
 
@@ -173,10 +191,12 @@ at Polnet Technologies International \\
 
 mobile devices, Anime, computer and video games, sci-fi, comic books, rollerblades, paintball, laser tag\\
 
-http://www.engadget.com/\\
-http://www.goldenline.pl/\\
-http://www.xda-developers.com/\\
-http://stackoverflow.com/\\
-http://kotaku.com/\\
+\href{http://engadget.com}{engadget.com}\\
+\href{http://xda-developers.com}{xda-developers.com}\\
+\href{http://android-central.com}{android-central.com}\\
+\href{http://kotaku.com}{kotaku.com}\\
+\href{http://heroku.com}{heroku.com}\\
+\href{http://cloudfoundry.org}{cloudfoundry.org}\\
+\href{http://github.com/quanchi}{github.com/quanchi}\\
 
 \end{document}
