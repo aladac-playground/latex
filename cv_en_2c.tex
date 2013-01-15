@@ -1,24 +1,30 @@
 %
 %  Created by Adam Ladachowski on 2012-03-31.
 %
-\documentclass[9pt,a4paper,twocolumn]{extarticle}
+%  Standard two column CV, free to use as template for your own
+%  
 
+% In order to use smaller fonts extarticle class and extsizes package are needed
+\documentclass[9pt,a4paper,twocolumn]{extarticle}
 \usepackage{extsizes}
 
-% \usepackage{polski}
-
+% I know what margins I want
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+% Need them fancy headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
+% The new standard way to handle input encoding and fonts
+\usepackage{xltxtra,xunicode}
 
-\usepackage{xltxtra,fontspec,xunicode}
-
+% We don't really need hyphenation for CV, and in two-column layout it tends to happen two often so away with it
 \usepackage[none]{hyphenat}
 
-\setromanfont{Ubuntu}
+% Use the free Lato font as main roman font and it's Ultra Bold variant as Bold: http://www.google.com/webfonts/specimen/Lato
+\setromanfont[BoldFont=Lato-Black]{Lato}
 
-
+% Much easier way than \renewcommand to change the look of section titles and spacings 
 \usepackage[compact]{titlesec}
 \titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{}
@@ -53,22 +59,31 @@
     urlcolor=black           % color of external links
 }
 
+% No new paragraph indentation
 \setlength{\parindent}{0pt} 
+
+% No extra spacing between paragraphs
 \setlength{\parskip}{0cm}
+
+% Space between columns
 \setlength{\columnsep}{2cm}
 
-
+% Show off contanct info in the fancy header
 \fancyhead[L]{{\bf email:} \href{mailto:adam.ladachowski@gmail.com}{adam.ladachowski@gmail.com}, {\bf mobile:} +48 535 329 895, {\bf blog:} \href{http://aladac.tumblr.com}{aladac.tumblr.com}, {\bf twitter:} \href{https://twitter.com/aladac}{@aladac}}
 \fancyfoot{}
+
+% Include the standard legal blah, blah
 \fancyfoot[L]{\tt\small I hereby agree for my personal data, included in my job application, to be processed in line with the needs of 
 recruitment, in accordance with the Personnel Protection Act of 29.08.1997 no 133 position 883}
 
+% Set the title and the author
 \title{CV}
 \author{Adam Ladachowski}
 
 \begin{document}
+
+% Insert mugshot here
 \includegraphics[width=\columnwidth]{photo_qr.png}
-%\vspace{0.2cm}
 
 \section*{Adam Ladachowski}
 born 1979, Warsaw resident
